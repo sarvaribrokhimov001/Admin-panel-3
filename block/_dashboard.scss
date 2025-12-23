@@ -1,0 +1,298 @@
+.dashboard {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins' , sans-serif;
+    color: white;
+    
+    &__container {
+        display: flex;
+    }
+
+    &__panel {
+        width: 380px;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    &__icon__and__title {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__icon {
+        font-size: 45px;
+        margin-top: 20px;
+    }
+
+    &__title {
+        font-size: 28px;
+    }
+
+    &__image__and__texts {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    &__user {
+        font-size: 20px;
+    }
+
+    &__user__description {
+        font-size: 16px;
+    }
+
+    &__user__description span {
+        font-size: 13px;
+        color: rgb(84, 182, 234);
+    }
+
+    &__sections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__section {
+        display: flex;
+        gap: 10px;
+        transition: all 0.6s ease;
+    }
+
+    &__section:hover {
+        color: red;
+        background: rgb(63, 44, 44);
+    }
+
+    &__section__icon {
+        font-size: 30px;
+        margin-top: 13px;
+    }
+
+    &__section__text {
+        font-size: 22px;
+    }
+
+    &__exits {
+        display: flex;
+        gap: 10px;
+        margin-top: 14px;
+    }
+
+    &__logout {
+        width: 150px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    &__logout:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        transition: all 0.7s ease;
+    }
+
+    &__signout {
+        width: 150px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: red;
+        color: white;
+    }
+
+    &__signout:hover {
+        background-color: rgb(29, 5, 5);
+        color: red;
+        border: 2px solid red;
+    }
+
+    &__navbar {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    &__search {
+        width: 400px;
+        height: 32px;
+        border-radius: 10px;
+        margin: 30px;
+    }
+
+    &__search:focus {
+        background-color: red;
+        color: white;
+        padding-left: 20px;
+    }
+
+    &__navbar__icons {
+        display: flex;
+        margin-left: 50px;
+        gap: 50px;
+    }
+
+    &__menu__icon {
+        font-size: 30px;
+        margin-top: 28px;
+    }
+
+    &__github__icon {
+        font-size: 40px;
+        margin-top: 27px;
+    }
+
+    &__menu__elements { 
+        width: 200px;  
+        height: 300px;     
+        color: white;
+    }
+
+    &__menu__element {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(223, 14, 14, 0.911);
+    }
+
+    &__menu__element__icon__and__text {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__menu__element__icon__and__text:hover {
+        background-color: black;
+        color: red;
+        border: 3px solid red;
+        transition: all 0.7s ease;
+    }
+
+    &__menu__element__icon {
+        font-size: 40px;
+        margin-top: 12px;
+    }
+
+    &__menu__element__text {
+        font-size: 22px;
+    }
+
+    &__view__btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: green;
+        color: white;
+        margin: 5px;
+    }
+
+    &__view__btn:hover {
+        background-color: white;
+        color: green;
+        border: 3px solid green;
+        transition: all 0.9s ease;
+    }
+
+    &__edit__btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: yellow;
+        color: white;
+        margin: 5px;
+    }
+
+    &__edit__btn:hover {
+        background-color: white;
+        color: yellow;
+        border: 3px solid yellow;
+        transition: all 0.9s ease;
+    }
+
+    &__delete__btn {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: red;
+        color: white;
+        margin: 5px;
+    }
+    
+    &__delete__btn:hover {
+        background-color: white;
+        color: red;
+        border: 3px solid red;
+        transition: all 0.9s ease;
+    }
+}
+
+body {
+    background-color: rgb(27, 26, 26);
+}
+
+table {
+  border-collapse: collapse;
+  color: red;
+  border: 5px solid red;
+}
+
+th {
+  text-align: center; 
+  background-color: black;
+  color: cyan;
+  font-weight: 400;
+  font-size: 19px;
+  border: 5px solid red;
+  padding: 30px;
+}
+
+td {
+  border: 5px solid red;
+  font-weight: 400;
+  padding: 20px;
+  text-align: start;
+  background-color: black;
+  color: cyan;
+}
+
+td:nth-child(1) {
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: cyan;
+}
+
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+
+input::placeholder {
+    padding-left: 30px;
+    color: red;
+}
+
+input::placeholder:focus {
+    padding-left: 30px;
+    color: white;
+}
