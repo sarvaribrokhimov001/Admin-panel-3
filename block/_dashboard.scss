@@ -140,7 +140,12 @@
     &__search:focus {
         background-color: red;
         color: white;
-        padding-left: 20px;
+        padding-left: 10px;
+    }
+
+    &__search::placeholder {
+         padding-left: 20px;
+         color: red;
     }
 
     &__navbar__icons {
@@ -170,7 +175,10 @@
         height: 300px;
         display: flex;
         flex-direction: column;
-        background-color: rgba(223, 14, 14, 0.911);
+        background-color: black;
+        border: 3px solid red;
+        position: relative;
+        z-index: 100;
     }
 
     &__menu__element__icon__and__text {
@@ -287,16 +295,6 @@ td:nth-child(3) {
   text-align: center;
 }
 
-input::placeholder {
-    padding-left: 30px;
-    color: red;
-}
-
-input::placeholder:focus {
-    padding-left: 30px;
-    color: white;
-}
-
 .hidden {
     display: none;
 }
@@ -309,5 +307,15 @@ input::placeholder:focus {
     background-color: black;
     color: green;
     border: 2px solid green;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 100px;
+    background-color: black;
 }
 

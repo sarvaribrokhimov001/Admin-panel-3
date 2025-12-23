@@ -10,12 +10,30 @@
       stopOnFocus: true,
       style: {
         background: `linear-gradient(to right, ${color}, black)`,
-        color: "green",
-        border: "1px solid green",
-        boxShadow: "0 0 12px rgba(0, 255, 0, 0.6)"
+        color: "red",
+        border: "1px solid red",
+        boxShadow: "0 0 12px rgba(255, 0, 0, 0.6)"
       }
     }).showToast();
   }
+
+    function toastMessage(message, color = "black", duration = 2000) {
+      Toastify({
+        text: message,
+        duration: duration,
+        close: true,
+        gravity: "top",
+        position: "center",
+        stopOnFocus: true,
+        style: {
+          background: `linear-gradient(to right, ${color}, black)`,
+          color: "green",
+          border: "1px solid green",
+          boxShadow: "0 0 12px rgba(0, 255, 0, 0.6)"
+      }
+    }).showToast();
+  }
+
 
   Toastify({
     text: "Dasturimizga xush kelibsiz !",
@@ -74,7 +92,7 @@
       return showToast("Invalid email address");
     }
 
-    showToast("Tizimga muvaffaqiyatli kirildi!", "black", 2500);
+    toastMessage("Tizimga muvaffaqiyatli kirildi!", "black", 2500);
 
       setTimeout(() => {
         window.location.href = "../pages/login.html"; 

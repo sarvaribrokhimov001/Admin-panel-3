@@ -158,11 +158,11 @@ elForm.addEventListener('submit' , (e)=> {
   const elImage = elForm['image'].value.trim();
 
   const elProducts = {
-    title,
-    price,
-    description,
-    category,
-    image
+    title: elTitle,
+    price: elPrice,
+    description: elDescription,
+    category: elCategory,
+    image: elImage
   };
 
   fetch(API , {

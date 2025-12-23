@@ -12,9 +12,16 @@
 }
 .index__input {
   padding: 14px 15px;
-  font-size: 17px;
+  font-size: 18px;
   border: 2px solid #ddd;
   border-radius: 8px;
+  color: red;
+}
+.index ::-moz-placeholder {
+  color: grey;
+}
+.index ::placeholder {
+  color: grey;
 }
 .index__btn {
   padding: 14px;
@@ -43,9 +50,8 @@
 }
 
 .login {
-  width: 500px;
+  width: 550px;
   height: 380px;
-  margin: auto;
   border-radius: 15px;
   background-color: black;
   font-family: "Poppins";
@@ -54,13 +60,13 @@
 .login__form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   padding-top: 90px;
   margin-top: 20px;
 }
 .login__title {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   margin: 0;
 }
@@ -73,10 +79,11 @@
   margin-top: 7px;
   position: absolute;
   left: 35px;
+  font-size: 20px;
 }
 .login__username {
   width: 240px;
-  height: 30px;
+  height: 38px;
   border-radius: 12px;
   border: none;
   margin: 0px 18px;
@@ -85,7 +92,7 @@
 }
 .login__password {
   width: 240px;
-  height: 30px;
+  height: 38px;
   border-radius: 12px;
   border: none;
   margin: 0px 18px;
@@ -110,8 +117,12 @@
   border: 3px solid cyan;
 }
 .login__body {
+  width: 100%;
+  height: 100vh;
   background-color: rgb(16, 3, 30);
-  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboard {
@@ -233,7 +244,15 @@
 .dashboard__search:focus {
   background-color: red;
   color: white;
+  padding-left: 10px;
+}
+.dashboard__search::-moz-placeholder {
   padding-left: 20px;
+  color: red;
+}
+.dashboard__search::placeholder {
+  padding-left: 20px;
+  color: red;
 }
 .dashboard__navbar__icons {
   display: flex;
@@ -258,7 +277,10 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(223, 14, 14, 0.911);
+  background-color: black;
+  border: 3px solid red;
+  position: relative;
+  z-index: 100;
 }
 .dashboard__menu__element__icon__and__text {
   display: flex;
@@ -364,26 +386,6 @@ td:nth-child(3) {
   text-align: center;
 }
 
-input::-moz-placeholder {
-  padding-left: 30px;
-  color: red;
-}
-
-input::placeholder {
-  padding-left: 30px;
-  color: red;
-}
-
-input::-moz-placeholder:focus {
-  padding-left: 30px;
-  color: white;
-}
-
-input::placeholder:focus {
-  padding-left: 30px;
-  color: white;
-}
-
 .hidden {
   display: none;
 }
@@ -396,4 +398,14 @@ input::placeholder:focus {
   background-color: black;
   color: green;
   border: 2px solid green;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 100px;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

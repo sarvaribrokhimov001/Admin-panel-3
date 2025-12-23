@@ -13,9 +13,14 @@
 
   &__input {
     padding: 14px 15px;
-    font-size: 17px;
+    font-size: 18px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    color: red;
+  }
+
+  ::placeholder {
+    color: grey;
   }
 
   &__btn {
