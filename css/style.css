@@ -382,4 +382,18 @@ input::-moz-placeholder:focus {
 input::placeholder:focus {
   padding-left: 30px;
   color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.add__Btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 13px;
+  margin-top: 30px;
+  background-color: black;
+  color: green;
+  border: 2px solid green;
 }/*# sourceMappingURL=style.css.map */

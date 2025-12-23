@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dashboard HTML 3 trial (3rd page) </title>
+    <title> Dashboard HTML 3 (3rd page) </title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="../css/normolize.css">
@@ -66,12 +66,30 @@
             </div> <!-- dashboard__sections -->
           </div> <!-- dashboard__panel -->
 
+          <div class="modal__window hidden">
+            <form class="addForm">
+              <input required type="text" placeholder="title" name="title">
+              <input required type="number" placeholder="price" name="price">
+              <input required type="text" placeholder="description" name="description">
+              <input required type="text" placeholder="category" name="category">
+              <input type="url" placeholder="image" name="image">
+
+              <div>
+                <button class="cancel__btn"> Cancel </button>
+                <button> Submit </button>
+              </div>
+            </form>
+          </div> <!-- modal__window -->
+
        <div class="dashboard__navbar__and__content">
           <nav class="dashboard__navbar">
             <input class="dashboard__search" type="search" placeholder="search...">
             <div class="dashboard__navbar__icons">
                <i class="ri-menu-line dashboard__menu__icon"></i>
                <div class="dashboard__menu__elements"></div>
+
+                <button class="add__Btn"> Add + </button>
+
                <i class="ri-github-fill dashboard__github__icon"></i> 
             </div> <!-- dashboard__navbar__icons -->
           </nav> <!-- dashboard__navbar -->
