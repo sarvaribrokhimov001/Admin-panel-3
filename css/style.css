@@ -203,7 +203,7 @@
   margin-top: 14px;
 }
 .dashboard__logout {
-  width: 150px;
+  width: 140px;
   height: 30px;
   border-radius: 10px;
   border: none;
@@ -215,17 +215,19 @@
   transition: all 0.7s ease;
 }
 .dashboard__signout {
-  width: 150px;
+  width: 140px;
   height: 30px;
   border-radius: 10px;
   border: none;
   background-color: red;
   color: white;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
 }
 .dashboard__signout:hover {
   background-color: rgb(29, 5, 5);
   color: red;
   border: 2px solid red;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
 }
 .dashboard__navbar {
   width: 100%;
