@@ -81,8 +81,7 @@ fetch(API).then(response => response.json()).then(data => {
 });
 
 function showData(data) {
-
-  data.map(({title , id , price , image , description , category} , index)=> {
+  data.map(({title , id , price , image , description , category})=> {
 
     tableBody.innerHTML+= `
     
@@ -106,7 +105,6 @@ function showData(data) {
 
 
 const deleteProduct = (id)=> {
-
   fetch(`https://fakestoreapi.com/products/${id}` , {
     method: "DELETE",
   }).then(response => response.json()).then(data => {
@@ -172,6 +170,8 @@ elForm.addEventListener('submit' , (e)=> {
   })
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
+    
        Toastify({
           text: `Item successfully added`,
           duration: 4000,

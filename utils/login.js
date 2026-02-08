@@ -41,7 +41,7 @@ const handleSubmit = (e)=> {
 
         if(token) {
             localStorage.setItem("token" , token);
-            // alert("Successfully Validation 🥳🥳🥳");
+            
             Toastify({
                 text: `Successfully Validation 🥳🥳🥳`,
                 duration: 3000,
